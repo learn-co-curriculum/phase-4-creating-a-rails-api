@@ -58,7 +58,7 @@ this model.
 
 For our `Movie` model, we'll want a table with the following attributes:
 
-![movies table diagram](movies-diagram.png)
+![movies table diagram](https://raw.githubusercontent.com/learn-co-curriculum/phase-4-creating-a-rails-api/master/movies-diagram.png)
 
 We could create the route, model, controller, and migration individually, but
 since this kind of operation is pretty common for a Rails developer, there's a
