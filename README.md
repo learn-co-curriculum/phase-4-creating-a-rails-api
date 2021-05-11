@@ -9,9 +9,9 @@
 
 We've spent a lot of time now focusing on the backend, and now's a great
 opportunity to see what we can actually do with all the power of a Rails API to
-support a frontend application as well!
+support a frontend application as well.
 
-Throughout this section, we'll be building a DVD shop! We'll have a Rails API to
+Throughout this section, we'll be building a DVD shop. We'll have a Rails API to
 support a React frontend application, and focusing on how that client-server
 communication process works, as well as some challenges involved in
 communicating between two separate applications.
@@ -58,7 +58,44 @@ this model.
 
 For our `Movie` model, we'll want a table with the following attributes:
 
-![movies table diagram](https://raw.githubusercontent.com/learn-co-curriculum/phase-4-creating-a-rails-api/master/movies-diagram.png)
+<table border="1" cellpadding="4" cellspacing="0">
+  <tr>
+    <th>Column Name</th>
+    <th>Data Type</th>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>string</td>
+  </tr>
+  <tr>
+    <td>year</td>
+    <td>integer</td>
+  </tr>
+  <tr>
+    <td>length</td>
+    <td>integer</td>
+  </tr>
+  <tr>
+    <td>description</td>
+    <td>string</td>
+  </tr>
+  <tr>
+    <td>poster_url</td>
+    <td>string</td>
+  </tr>
+  <tr>
+    <td>category</td>
+    <td>string</td>
+  </tr>
+  <tr>
+    <td>discount</td>
+    <td>boolean</td>
+  </tr>
+  <tr>
+    <td>female_director</td>
+    <td>boolean</td>
+  </tr>
+</table>
 
 We could create the route, model, controller, and migration individually, but
 since this kind of operation is pretty common for a Rails developer, there's a
