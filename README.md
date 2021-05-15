@@ -16,19 +16,18 @@ support a React frontend application, and focusing on how that client-server
 communication process works, as well as some challenges involved in
 communicating between two separate applications.
 
-In this lesson, we've got some starter code set up for a React frontend
-application, and we'll start by building the Rails backend from scratch to talk
-about some of the setup to allow communication from JavaScript to our server.
+In this lesson, we'll start by building the Rails backend from scratch and talk
+through some of the typical configuration when creating a new Rails API.
 
 ## Generating a Rails API
 
 Just like we saw at the beginning of the phase, we can use `rails new` to
 generate a new Rails application. We'll run that same command with a few
 additional options to optimize our Rails app. Let's generate the backend code
-for our `dvd-shop-api`:
+for our `dvd-shop`:
 
 ```sh
-rails new dvd-shop-api --api --minimal -G
+rails new dvd-shop --api --minimal -G
 ```
 
 - `--api`: this flag will create our new application with some additional
