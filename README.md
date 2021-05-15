@@ -100,7 +100,7 @@ We could create the route, model, controller, and migration individually, but
 since this kind of operation is pretty common for a Rails developer, there's a
 handy generator that will set up all the code we need: `rails g resource`.
 
-Run this code in your terminal:
+`cd` into the `dvd-shop` directory, then run this code in your terminal:
 
 ```sh
 rails g resource Movie title year:integer length:integer director description poster_url category discount:boolean female_director:boolean --no-test-framework
