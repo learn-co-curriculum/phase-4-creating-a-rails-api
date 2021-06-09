@@ -12,9 +12,9 @@ opportunity to see what we can actually do with all the power of a Rails API to
 support a frontend application as well.
 
 Throughout this section, we'll be building a DVD shop. We'll have a Rails API to
-support a React frontend application, and focusing on how that client-server
-communication process works, as well as some challenges involved in
-communicating between two separate applications.
+support a React frontend application, and we'll be focusing on how that
+client-server communication process works, as well as some challenges involved
+in communicating between two separate applications.
 
 In this lesson, we'll start by building the Rails backend from scratch and talk
 through some of the typical configuration when creating a new Rails API.
@@ -24,7 +24,7 @@ through some of the typical configuration when creating a new Rails API.
 Just like we saw at the beginning of the phase, we can use `rails new` to
 generate a new Rails application. We'll run that same command with a few
 additional options to optimize our Rails app. Let's generate the backend code
-for our `dvd-shop`. Use `cd ..` to exit the lab directory, and run:
+for our `dvd-shop`. Use `cd ..` to navigate out of the lab directory, and run:
 
 ```sh
 rails new dvd-shop --api --minimal
@@ -102,7 +102,7 @@ We could create the route, model, controller, and migration individually, but
 since this kind of operation is pretty common for a Rails developer, there's a
 handy generator that will set up all the code we need: `rails g resource`.
 
-`cd` into the `dvd-shop` directory, then run this code in your terminal:
+Navigate into the `dvd-shop` directory and run this code in your terminal:
 
 ```sh
 rails g resource Movie title year:integer length:integer director description poster_url category discount:boolean female_director:boolean --no-test-framework
