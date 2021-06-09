@@ -24,10 +24,10 @@ through some of the typical configuration when creating a new Rails API.
 Just like we saw at the beginning of the phase, we can use `rails new` to
 generate a new Rails application. We'll run that same command with a few
 additional options to optimize our Rails app. Let's generate the backend code
-for our `dvd-shop`:
+for our `dvd-shop`. Use `cd ..` to exit the lab directory, and run:
 
 ```sh
-rails new dvd-shop --api --minimal -G
+rails new dvd-shop --api --minimal
 ```
 
 - `--api`: this flag will create our new application with some additional
@@ -36,10 +36,12 @@ rails new dvd-shop --api --minimal -G
 - `--minimal`: this flag skips a lot of additional Rails features that we
   won't use in our API, such as code for sending emails and processing images.
   Read more about the [`--minimal` flag][--minimal].
-- `-G`: don't initialize a Git repository. Since this lab is already in a Git
-  repository, we don't need to create a new repo for the Rails API. Typically,
-  you **do** want to initialize a Git repo for your Rails projects, so you
-  generally will not be using this flag.
+
+> The reason we ask you to `cd` out of the lab directory is because when you
+> generate a new Rails project, it will automatically create a new Git
+> repository for your Rails project. Since the lab directory is already a Git
+> repository, it's better to create this new project in its own directory, so
+> you don't end up with nested Git repositories.
 
 With that code in place, let's generate the code for handling our first request
 from the client.
