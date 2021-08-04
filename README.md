@@ -59,44 +59,16 @@ this model.
 
 For our `Movie` model, we'll want a table with the following attributes:
 
-<table border="1" cellpadding="4" cellspacing="0">
-  <tr>
-    <th>Column Name</th>
-    <th>Data Type</th>
-  </tr>
-  <tr>
-    <td>title</td>
-    <td>string</td>
-  </tr>
-  <tr>
-    <td>year</td>
-    <td>integer</td>
-  </tr>
-  <tr>
-    <td>length</td>
-    <td>integer</td>
-  </tr>
-  <tr>
-    <td>description</td>
-    <td>string</td>
-  </tr>
-  <tr>
-    <td>poster_url</td>
-    <td>string</td>
-  </tr>
-  <tr>
-    <td>category</td>
-    <td>string</td>
-  </tr>
-  <tr>
-    <td>discount</td>
-    <td>boolean</td>
-  </tr>
-  <tr>
-    <td>female_director</td>
-    <td>boolean</td>
-  </tr>
-</table>
+| Column Name | Data Type |
+| --- | --- |
+| title | string |
+| year | integer |
+| length | integer |
+| description | string |
+| poster_url | string |
+| category | string |
+| discount | boolean |
+| female_director | boolean |
 
 We could create the route, model, controller, and migration individually, but
 since this kind of operation is pretty common for a Rails developer, there's a
