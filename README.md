@@ -26,8 +26,8 @@ generate a new Rails application. We'll run that same command with a few
 additional options to optimize our Rails app. Let's generate the backend code
 for our `dvd-shop`. Use `cd ..` to navigate out of the lab directory, and run:
 
-```sh
-rails new dvd-shop --api --minimal
+```console
+$ rails new dvd-shop --api --minimal
 ```
 
 - `--api`: this flag will create our new application with some additional
@@ -59,16 +59,16 @@ this model.
 
 For our `Movie` model, we'll want a table with the following attributes:
 
-| Column Name | Data Type |
-| --- | --- |
-| title | string |
-| year | integer |
-| length | integer |
-| description | string |
-| poster_url | string |
-| category | string |
-| discount | boolean |
-| female_director | boolean |
+| Column Name     | Data Type |
+| --------------- | --------- |
+| title           | string    |
+| year            | integer   |
+| length          | integer   |
+| description     | string    |
+| poster_url      | string    |
+| category        | string    |
+| discount        | boolean   |
+| female_director | boolean   |
 
 We could create the route, model, controller, and migration individually, but
 since this kind of operation is pretty common for a Rails developer, there's a
@@ -76,8 +76,8 @@ handy generator that will set up all the code we need: `rails g resource`.
 
 Navigate into the `dvd-shop` directory and run this code in your terminal:
 
-```sh
-rails g resource Movie title year:integer length:integer director description poster_url category discount:boolean female_director:boolean --no-test-framework
+```console
+$ rails g resource Movie title year:integer length:integer director description poster_url category discount:boolean female_director:boolean --no-test-framework
 ```
 
 This command will:
@@ -96,8 +96,8 @@ To get some sample data into our application, we've provided a `seeds.rb` file
 in the root directory of this repo. Copy the contents of this file into your
 `db/seeds.rb` file. Then, to set up and seed the database, run:
 
-```sh
-rails db:migrate db:seed
+```console
+$ rails db:migrate db:seed
 ```
 
 Let's update our `routes.rb` file to set up just the one route our frontend
