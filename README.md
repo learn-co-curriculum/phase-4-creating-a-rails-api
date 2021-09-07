@@ -129,6 +129,13 @@ We also saw how to use the `resource` generator, which can help quickly set
 up the code we need to create RESTful routes and CRUD functionality for one
 single resource.
 
+## Check For Understanding
+
+Before you move on, make sure you can answer the following question:
+
+1. What are the steps you learned in this lesson to create a new Rails API
+   project and get it set up to respond to a request for a resource?
+
 ## Resources
 
 - [The Rails Command Line](https://guides.rubyonrails.org/command_line.html)
