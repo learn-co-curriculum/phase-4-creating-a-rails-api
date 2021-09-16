@@ -133,8 +133,7 @@ single resource.
 
 Before you move on, make sure you can answer the following question:
 
-1. What are the steps you learned in this lesson to create a new Rails API
-   project and get it set up to respond to a request for a resource?
+1. What files are generated when running `rails g resource ResourceName`?
 
 ## Resources
 
