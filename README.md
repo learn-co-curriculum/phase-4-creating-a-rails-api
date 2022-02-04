@@ -64,6 +64,7 @@ For our `Movie` model, we'll want a table with the following attributes:
 | title           | string    |
 | year            | integer   |
 | length          | integer   |
+| director        | string    |
 | description     | string    |
 | poster_url      | string    |
 | category        | string    |
