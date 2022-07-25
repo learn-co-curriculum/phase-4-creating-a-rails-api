@@ -12,12 +12,12 @@ opportunity to see what we can actually do with all the power of a Rails API to
 support a frontend application as well.
 
 Throughout this section, we'll be building a DVD shop. We'll have a Rails API to
-support a React frontend application, and we'll be focusing on how that
+support a React frontend application, and we'll focuse on how that
 client-server communication process works, as well as some challenges involved
 in communicating between two separate applications.
 
-In this lesson, we'll start by building the Rails backend from scratch and talk
-through some of the typical configuration when creating a new Rails API.
+In this lesson, we'll start by building the Rails backend from scratch and talking
+through some the typical configurations when creating a new Rails API.
 
 ## Generating a Rails API
 
